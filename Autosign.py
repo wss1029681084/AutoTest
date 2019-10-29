@@ -1,7 +1,7 @@
 #---------------------------叮咚买菜
 url2="http://ddxq.mobi/api/v2/user/sign/"
 
-cookie=dict( DDXQSESSID='d36e27c085470e2cfcdac1f6f946cc49')
+cookie=dict( DDXQSESSID='a026968bcc3c9e51e1978c35b17c6c14')
 cookie2=requests.utils.cookiejar_from_dict(cookie)
 Ast2="sign_series"
 res2=requests.post(url2,cookies=cookie2)
@@ -61,7 +61,12 @@ while n<4:
     res2=requests.post(url,data.encode('utf-8'),cookie,headers=headers).content.decode('utf-8')
     logging.info("巴乐兔租房app签到------------------"+res2)
     n+=1
-data1="city_id=1&contract_id=463151&device_id=9051F906-EB90-4D08-8E50-AB1B99E0EE44&from=2&preset_parameters=%7B%0A%20%20%22%24os_version%22%20%3A%20%2212.2%22%2C%0A%20%20%22%24device_id%22%20%3A%20%2271CA293E-5FF6-4267-9954-D44BC8E3984E%22%2C%0A%20%20%22distinct_id%22%20%3A%20%221001370011%22%2C%0A%20%20%22%24os%22%20%3A%20%22iOS%22%2C%0A%20%20%22%24carrier%22%20%3A%20%22%E4%B8%AD%E5%9B%BD%E8%81%94%E9%80%9A%22%2C%0A%20%20%22%24screen_height%22%20%3A%20736%2C%0A%20%20%22%24is_first_day%22%20%3A%20false%2C%0A%20%20%22%24screen_width%22%20%3A%20414%2C%0A%20%20%22%24model%22%20%3A%20%22iPhone7%2C1%22%2C%0A%20%20%22%24wifi%22%20%3A%20true%2C%0A%20%20%22%24network_type%22%20%3A%20%22WIFI%22%2C%0A%20%20%22%24app_version%22%20%3A%20%224.8.7%22%2C%0A%20%20%22%24manufacturer%22%20%3A%20%22Apple%22%2C%0A%20%20%22%24lib%22%20%3A%20%22iOS%22%2C%0A%20%20%22gps_city%22%20%3A%20%22%E4%B8%8A%E6%B5%B7%E5%B8%82%22%2C%0A%20%20%22%24lib_version%22%20%3A%20%221.10.24%22%0A%7D&public_parameters=%7B%0A%20%20%22uuid%22%20%3A%20%2293394619a3c21e032e18742cb04bcc40%22%2C%0A%20%20%22cookies_id%22%20%3A%20%220%22%2C%0A%20%20%22project_role%22%20%3A%20%22%E7%A7%9F%E5%AE%A2%22%2C%0A%20%20%22channel%22%20%3A%20%22AppStore%22%2C%0A%20%20%22is_login%22%20%3A%20true%2C%0A%20%20%22is_has_contract%22%20%3A%20true%2C%0A%20%20%22openid%22%20%3A%20%220%22%2C%0A%20%20%22gps_city%22%20%3A%20%22%E4%B8%8A%E6%B5%B7%E5%B8%82%22%2C%0A%20%20%22new_project_name%22%20%3A%20%221%22%2C%0A%20%20%22platformType%22%20%3A%20%22iOS%22%2C%0A%20%20%22city_code%22%20%3A%20%22310100%22%2C%0A%20%20%22device_id%22%20%3A%20%229051F906-EB90-4D08-8E50-AB1B99E0EE44%22%2C%0A%20%20%22blt_user_id%22%20%3A%20%221001370011%22%0A%7D&type=2&udid=93394619a3c21e032e18742cb04bcc40&user_id=1001370011&ut=2637bab35f7dcc8f48d87655c715a722a4b9223a&v=4.8.7"
+data1="city_id=1&contract_id=463151&coupon_id=125&device_id=9051F906-EB90-4D08-8E50-AB1B99E0EE44&from=2&preset_parameters=%7B%0A%20%20%22%24os_version%22%20%3A%20%2212.4%22%2C%0A%20%20%22%24device_id%22%20%3A%20%2271CA293E-5FF6-4267-9954-D44BC8E3984E%22%2C%0A%20%20%22distinct_id%22%20%3A%20%221001370011%22%2C%0A%20%20%22%24os%22%20%3A%20%22iOS%22%2C%0A%20%20%22%24carrier%22%20%3A%20%22%E4%B8%AD%E5%9B%BD%E8%81%94%E9%80%9A%22%2C%0A%20%20%22%24screen_height%22%20%3A%20736%2C%0A%20%20%22%24is_first_day%22%20%3A%20false%2C%0A%20%20%22%24screen_width%22%20%3A%20414%2C%0A%20%20%22%24model%22%20%3A%20%22iPhone7%2C1%22%2C%0A%20%20%22%24wifi%22%20%3A%20true%2C%0A%20%20%22%24network_type%22%20%3A%20%22WIFI%22%2C%0A%20%20%22%24app_version%22%20%3A%20%224.9.7%22%2C%0A%20%20%22%24manufacturer%22%20%3A%20%22Apple%22%2C%0A%20%20%22%24lib%22%20%3A%20%22iOS%22%2C%0A%20%20%22gps_city%22%20%3A%20%22%E4%B8%8A%E6%B5%B7%E5%B8%82%22%2C%0A%20%20%22%24lib_version%22%20%3A%20%221.10.24%22%0A%7D&public_parameters=%7B%0A%20%20%22uuid%22%20%3A%20%2293394619a3c21e032e18742cb04bcc40%22%2C%0A%20%20%22cookies_id%22%20%3A%20%220%22%2C%0A%20%20%22project_role%22%20%3A%20%22%E7%A7%9F%E5%AE%A2%22%2C%0A%20%20%22channel%22%20%3A%20%22AppStore%22%2C%0A%20%20%22is_login%22%20%3A%20true%2C%0A%20%20%22is_has_contract%22%20%3A%20true%2C%0A%20%20%22openid%22%20%3A%20%220%22%2C%0A%20%20%22gps_city%22%20%3A%20%22%E4%B8%8A%E6%B5%B7%E5%B8%82%22%2C%0A%20%20%22new_project_name%22%20%3A%20%221%22%2C%0A%20%20%22platformType%22%20%3A%20%22iOS%22%2C%0A%20%20%22city_code%22%20%3A%20%22310100%22%2C%0A%20%20%22device_id%22%20%3A%20%229051F906-EB90-4D08-8E50-AB1B99E0EE44%22%2C%0A%20%20%22blt_user_id%22%20%3A%20%221001370011%22%0A%7D&udid=93394619a3c21e032e18742cb04bcc40&user_id=1001370011&ut=2637bab35f7dcc8f48d87655c715a722a4b9223a&v=4.9.7"
 url1="https://api.baletu.com/App401/UserPoints/CouponAward"
 res=requests.post(url1,data1.encode('utf-8'),cookie,headers=headers).content.decode('utf-8')
 logging.info("巴乐兔租房app签到兑奖------------------"+res)
+
+
+https://m.lhjing.com/act/lucky_draw?clientId=1&apiVer=1.0.0&appVer=1.3.1&channel=
+   cookie=sid=IjDTq5bCOytP6sFm1PV06SS0d2f75eDqJsJYq0FkRTQ=; acw_tc=3a14c53115709713522854734ee8bc5c3b96764eea707bcc9db755b9c2
+
